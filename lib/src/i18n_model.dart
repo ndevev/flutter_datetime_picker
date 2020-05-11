@@ -982,7 +982,7 @@ final _i18nModel = {
       'november',
       'december'
     ],
-    'day': ['Hé', 'Ke', 'Sze', 'Csü', 'Pé', 'Szo', 'Va'],
+    'day': ['H', 'K', 'Sze', 'Cs', 'P', 'Szo', 'V'],
     'am': 'de',
     'pm': 'du'
   },
