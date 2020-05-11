@@ -25,7 +25,8 @@ enum LocaleType {
   bg,
   eu,
   cat,
-  th
+  th,
+  hu
 }
 
 final _i18nModel = {
@@ -949,6 +950,42 @@ final _i18nModel = {
     'am': 'AM',
     'pm': 'PM'
   },
+  'hu': {
+    'cancel': 'Mégse',
+    'done': 'Kész',
+    'today': 'Ma',
+    'monthShort': [
+      'Jan',
+      'Feb',
+      'Már',
+      'Ápr',
+      'Máj',
+      'Jún',
+      'Júl',
+      'Aug',
+      'Szep',
+      'Okt',
+      'Nov',
+      'Dec'
+    ],
+    'monthLong': [
+      'Január',
+      'Február',
+      'Március',
+      'Április',
+      'Május',
+      'Június',
+      'Július',
+      'Augusztus',
+      'Szeptember',
+      'Október',
+      'November',
+      'December'
+    ],
+    'day': ['Hé', 'Ke', 'Sze', 'Csü', 'Pé', 'Szo', 'Va'],
+    'am': 'AM',
+    'pm': 'PM'
+  },
 };
 //get international object
 Map<String, dynamic> i18nObjInLocale(LocaleType type) {
@@ -1005,6 +1042,8 @@ Map<String, dynamic> i18nObjInLocale(LocaleType type) {
       return _i18nModel['cat'];
     case LocaleType.th:
       return _i18nModel['th'];
+    case LocaleType.hu:
+      return _i18nModel['hu'];
     default:
       return _i18nModel['en'];
   }
